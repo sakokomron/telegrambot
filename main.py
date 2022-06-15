@@ -53,27 +53,6 @@ def game (messages):
             bot.send_message(chatId, "Sizda urinishlar qolmadi yangi o`yin boshlang", reply_markup=markup)  
        
 
-
-
-# def listener(messages):
-#     markup = types.ReplyKeyboardMarkup()
-#     for m in messages:
-#         chatid = m.chat.id
-#         if m.content_type == 'text':
-#             text = m.text
-#             if(text == 'salom'):
-#                 markup.add('namoz vaqti', 'juma muborak')
-#                 bot.send_message(chatid, '<b>salom</b>', parse_mode="HTML", reply_markup=markup )
-#             elif (text == 'namoz vaqti'):
-#                 markup.add('namoz vaqti', 'juma muborak')
-#                 bot.send_photo(chatid, 'https://t.me/namoz/22182',reply_markup=markup)
-#             elif text == 'juma muborak':
-#                  markup.add('namoz vaqti', 'juma muborak')
-#                  bot.send_photo(chatid, 'https://t.me/Suralar/354',reply_markup=markup)
-        # elif m.content_type == 'photo':
-        #         bot.send_message(chatid, 'salom',)
-
-
 bot.set_update_listener(game)
 
 # bot.polling()
