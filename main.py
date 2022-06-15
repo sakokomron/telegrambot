@@ -70,8 +70,8 @@ def game (messages):
 #             elif text == 'juma muborak':
 #                  markup.add('namoz vaqti', 'juma muborak')
 #                  bot.send_photo(chatid, 'https://t.me/Suralar/354',reply_markup=markup)
-#         elif m.content_type == 'photo':
-#                 bot.send_message(chatid, 'salom',)
+        # elif m.content_type == 'photo':
+        #         bot.send_message(chatid, 'salom',)
 
 
 bot.set_update_listener(game)
