@@ -32,6 +32,8 @@ def game (messages):
             count["count"] = 6
             start["start"] = True
             bot.send_message(chatId, 'Son o`yladim toping',reply_markup=markup)
+        elif (text.isnumeric() == False):
+            bot.send_message(chatId, "Faqat raqam kiriting iltimos")
         elif( int(text) == int(son(False)) and count["count"] > 0 and start["start"]):
             print('teng')
             bot.send_message(chatId, 'Tabriklaymiz to`g`ri topdiz',reply_markup=markup)
