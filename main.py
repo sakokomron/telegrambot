@@ -7,8 +7,6 @@ import time
 TOKEN = '5340444590:AAEyrVhN0Kmkkwb2xdh7qlufqx4RpPWIqVM'
 
 bot = telebot.TeleBot(TOKEN)
-# tb.send_message(chatid, message)
-
 
 rand = {"a":0} 
 rand["a"] = randint(1,100)
